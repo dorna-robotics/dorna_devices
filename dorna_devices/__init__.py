@@ -41,6 +41,7 @@ from dorna_devices.adapter import (
     DEFAULT_BROKER_PORT,
 )
 from dorna_devices.recovery import AutoRecover
+from dorna_devices.liveness import LivenessProbe
 
 __all__ = [
     # protocol shapes
@@ -57,6 +58,8 @@ __all__ = [
     "DEFAULT_BROKER_PORT",
     # recovery
     "AutoRecover",
+    # liveness watchdog
+    "LivenessProbe",
 ]
 
 __version__ = "0.1.0"
